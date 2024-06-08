@@ -1,0 +1,37 @@
+﻿<Window x:Class="BitService.Requests"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Requests" MinHeight="450" MinWidth="800">
+    <Grid Margin="50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Номер заявки" Margin="10"/>
+            <TextBox Width="200" Margin="10" x:Name="SearchTextBox" x:FieldModifier="public"/>
+            <Button Content="Найти" Height="30" Click="Button_Click"/>
+            <Button Content="Обновить" Click="Button_Click_2"/>
+        </StackPanel>
+        <DataGrid x:Name="RequestsDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер заявки" Binding="{Binding requestID}" Width="*"/>
+                <DataGridTextColumn Header="Дата добавления" Binding="{Binding startDate}" Width="*"/>
+                <DataGridTextColumn Header="Модель и тип" Binding="{Binding HomeTechDescription}" Width="*"/>
+                <DataGridTextColumn Header="Описание проблемы" Binding="{Binding problemDescryption}" Width="*"/>
+                <DataGridTextColumn Header="Дата завершения" Binding="{Binding completionDate}" Width="*"/>
+                <DataGridTextColumn Header="Запчасти" Binding="{Binding repairParts}" Width="*"/>
+                <DataGridTextColumn Header="ФИО клиента" Binding="{Binding FIO}" Width="*"/>
+                <DataGridTextColumn Header="Номер телефона" Binding="{Binding PhoneNumber}" Width="*"/>
+                <DataGridTextColumn Header="Статус заявки" Binding="{Binding RequestStatus}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Button Content="Выход" Height="30" Width="100" Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>
+</Window>

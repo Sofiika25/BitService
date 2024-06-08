@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitService", "BitService.csproj", "{E2D522AC-531B-4F61-8E02-282853BFCAD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsLearn", "..\UnitTestsLearn\UnitTestsLearn.csproj", "{B0F18725-1FA4-4997-B6DC-0D63F217CFA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2D522AC-531B-4F61-8E02-282853BFCAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2D522AC-531B-4F61-8E02-282853BFCAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2D522AC-531B-4F61-8E02-282853BFCAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2D522AC-531B-4F61-8E02-282853BFCAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F18725-1FA4-4997-B6DC-0D63F217CFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F18725-1FA4-4997-B6DC-0D63F217CFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F18725-1FA4-4997-B6DC-0D63F217CFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F18725-1FA4-4997-B6DC-0D63F217CFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9811EDD-D56E-44BB-A1F7-18F8A4B0FF67}
+	EndGlobalSection
+EndGlobal

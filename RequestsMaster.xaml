@@ -1,0 +1,32 @@
+﻿<Window x:Class="BitService.RequestsMaster"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="RequestsMaster" Height="450" Width="800">
+    <Grid Margin="50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Button Content="Выход" Height="30" Width="100" Click="Button_Click"/>
+        </StackPanel>
+        <DataGrid x:Name="RequestsDataGrid" AutoGenerateColumns="False" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер заявки" Binding="{Binding requestID}" Width="*"/>
+                <DataGridTextColumn Header="Дата добавления" Binding="{Binding startDate}" Width="*"/>
+                <DataGridTextColumn Header="Модель и тип" Binding="{Binding HomeTechDescription}" Width="*"/>
+                <DataGridTextColumn Header="Описание проблемы" Binding="{Binding problemDescryption}" Width="*"/>
+                <DataGridTextColumn Header="Дата завершения" Binding="{Binding completionDate}" Width="*"/>
+                <DataGridTextColumn Header="Статус заявки" Binding="{Binding RequestStatus}" Width="*"/>
+                <DataGridTextColumn Header="Комментарий" Binding="{Binding Comments}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2" Margin="10">
+            <Button x:Name="AddButton" Content="Добавить комментарий" Margin="5" Click="AddButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
